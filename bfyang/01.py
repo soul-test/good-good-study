@@ -3,15 +3,15 @@ shu = random.randint(0,100)
 
 count = 1
 
-while count <= 5:
-    cai = int(input('请输入一个数字: '))
-    if cai == shu:
-        print('猜对了!')
+while count <=5:
+    guess = int(input('请输入一个数字: '))
+    if guess == shu:
+        print('猜对了')
         break
-    elif cai < shu:
-        print('猜小了')
+    elif guess < shu:
+        print('数字小了')
     else:
-        print('猜大了')
+        print('数字大了')
     count += 1
     if count == 6:
-        print('很遗憾,再来一次')
+        print('没猜对')
