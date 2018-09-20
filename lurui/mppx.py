@@ -11,4 +11,5 @@ while i < 7:
             nums[i] = x
         j += 1
     i += 1
+print('排序后的数字：',str(nums))
 print('最大的数字为：', str(nums[6]))
