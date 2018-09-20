@@ -1,0 +1,67 @@
+This is my first python
+
+Signed-off-by: Linna520 <2472471999@qq.com>
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   yangyakun/guessnumber.py
+#	modified:   "yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py"
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    "yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py"
+#
+diff --git a/yangyakun/guessnumber.py b/yangyakun/guessnumber.py
+new file mode 100644
+index 0000000..ca56e04
+--- /dev/null
++++ b/yangyakun/guessnumber.py
+@@ -0,0 +1,17 @@
++import random
++sj = random.randint(0,100)
++
++count = 1
++
++while count <= 5:
++	guess = int(input('Please input a number: '))
++	if guess == sj:
++		print('You are good!')
++		break
++	elif guess < sj:
++		print('The number is smaller than right answer!')
++	else:
++		print('The number is bigger than right answer!')
++	count += 1
++	if count == 6:
++		print('sorry,your IQ is limited,it is not suitable for this kind of game,thank you for your participation')
+diff --git "a/yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py" "b/yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py"
+index 26f449a..2270266 100644
+--- "a/yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py"
++++ "b/yangyakun/\347\214\234\346\225\260\345\255\227\346\270\270\346\210\217.py"
+@@ -6,12 +6,12 @@ count = 1
+ while count <= 5:
+ 	guess = int(input('请您先输入一个数字: '))
+ 	if guess == sj:
+-		print('你真棒！')
++		print('你真棒!')
+ 		break
+ 	elif guess < sj:
+-		print('数字有点小！')
++		print('数字有点小!')
+ 	else:
+-		print('数字有点大！')
++		print('数字有点大!')
+ 	count = count + 1
+ 	if count == 6:
+-		print('对不起，您的智商有限，不适合此类游戏')
+\ No newline at end of file
++		print('对不起，您的智商有限，不适合此类游戏，谢谢参与!')
