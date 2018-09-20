@@ -1,0 +1,14 @@
+nums=[6,11,7,9,4,2,1]
+
+i = 0
+while i < 7:
+    j = 0
+    while j < i:
+        if nums[i] < nums[j]:
+            x = 0
+            x = nums[j]
+            nums[j] = nums[i]
+            nums[i] = x
+        j += 1
+    i += 1
+print(nums[6])
