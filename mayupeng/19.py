@@ -10,4 +10,5 @@ for y in range(len(num)-1):
               num[x] = num[x + 1]
               num[x + 1] = a
 print(num)
-~     
+~
+~           
